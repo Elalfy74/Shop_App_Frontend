@@ -1,0 +1,44 @@
+.slider {
+  display: flex;
+  height: 100%;
+  min-width: 100vw;
+  padding-top: 30px;
+  align-items: center;
+}
+.slider img {
+  flex: 1;
+  max-height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.slider .info {
+  flex: 1;
+  padding: 10px 50px 10px 0px;
+}
+@media (max-width: 991px) {
+  .slider .info {
+    display: none;
+  }
+}
+.slider .info h1 {
+  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+.slider .info p {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+.btn {
+  margin-top: 3rem;
+  border: 1px solid var(--second-color);
+  background-color: transparent;
+  color: var(--second-color);
+}
+.btn::before {
+  background-color: var(--second-color);
+}
+.btn:hover {
+  color: white;
+}

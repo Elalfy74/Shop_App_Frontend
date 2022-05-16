@@ -1,0 +1,48 @@
+.banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-position: center;
+}
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+@media (max-width: 767px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
+.banner a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: var(--main-transition);
+  z-index: 1;
+}
+.banner a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.banner a:hover {
+  color: #353e53;
+}
+.banner a:hover::before {
+  left: 0;
+}

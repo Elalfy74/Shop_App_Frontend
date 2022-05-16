@@ -1,0 +1,12 @@
+.cart_info {
+  display: flex;
+  justify-content: space-between;
+}
+.items {
+  flex: 1;
+}
+@media (max-width: 991px) {
+  .cart_info {
+    flex-direction: column;
+  }
+}

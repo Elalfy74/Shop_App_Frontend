@@ -1,0 +1,71 @@
+.h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.actions div {
+  display: flex;
+  gap: 1.5rem;
+}
+.btn {
+  min-height: 40px;
+  min-width: 100px;
+  border: 1px solid black;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.btn_continue {
+  background-color: white;
+  color: black;
+}
+.btn_continue::before {
+  background-color: black;
+}
+.btn_continue:hover {
+  color: white;
+}
+.btn_checkout {
+  background-color: black;
+  color: white;
+}
+.btn_checkout::before {
+  background-color: white;
+}
+.btn_checkout:hover {
+  color: black;
+}
+@media (max-width: 991px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+  .actions {
+    align-items: flex-start;
+  }
+  .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  .actions div {
+    align-self: end;
+  }
+  .actions .link {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.6rem;
+  }
+}

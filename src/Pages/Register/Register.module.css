@@ -1,0 +1,128 @@
+.register {
+  height: calc(100vh - 68px);
+  width: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.register::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.507);
+}
+.wrapper {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  min-width: 50%;
+  max-width: 75%;
+}
+.invalid_message {
+  margin: 0px auto 20px;
+  width: fit-content;
+  padding: 10px 15px;
+  background-color: #fdeded;
+}
+.wrapper h3 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    padding: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .wrapper form {
+    width: 100%;
+  }
+  .wrapper h3 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .name {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.input label {
+  margin-top: 5px;
+  margin-left: 2px;
+  color: red;
+}
+.wrapper form input {
+  max-width: 100%;
+  padding: 10px 15px;
+  border-radius: 0;
+  font-size: 1rem;
+  border: 1px solid rgb(87, 86, 86);
+}
+@media (max-width: 767px) {
+  .wrapper form input {
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+}
+.wrapper form input:focus {
+  outline: none;
+}
+.wrapper form p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.wrapper form p span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wrapper form input[type="submit"] {
+  width: fit-content;
+  background-color: var(--second-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.wrapper p:last-child {
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .wrapper p:last-child {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+}
+.wrapper a {
+  color: rgb(19, 121, 236);
+  font-weight: bold;
+}

@@ -1,0 +1,88 @@
+.item {
+  display: flex;
+  border-bottom: 1px solid rgb(112, 111, 111);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.item img {
+  width: 200px;
+  object-fit: contain;
+  margin-right: 1.2rem;
+}
+.info {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+.info span {
+  font-weight: 600;
+}
+.info .color {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.quantity {
+  display: flex;
+  margin-left: 10rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+}
+.quantity p {
+  display: flex;
+  align-items: center;
+}
+.counter {
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.counter:hover {
+  background-color: rgb(224, 221, 221);
+}
+@media (max-width: 1200px) {
+  .info {
+    font-size: 1rem;
+  }
+  .quantity {
+    margin-left: 5rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .quantity {
+    margin-left: 0.4rem;
+    font-size: 1rem;
+  }
+  .item img {
+    width: 100px;
+    margin-right: 0.6rem;
+  }
+  .info {
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.6rem;
+  }
+  .counter {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+}

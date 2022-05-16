@@ -1,0 +1,32 @@
+/* Start Global Rules */
+:root {
+  /* --main-color: #e3edf3; */
+  --main-color: #08546c;
+  /* --main-color-alt: #edf8ff; */
+  --main-color-alt: #a0bacc;
+  /* --second-color: rgb(193, 145, 153); */
+  /* --second-color: teal; */
+  --second-color: #022534;
+  --third-color: #3b685e;
+  --main-transition: 0.3s;
+  --section-color: #ececec;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Urbanist", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

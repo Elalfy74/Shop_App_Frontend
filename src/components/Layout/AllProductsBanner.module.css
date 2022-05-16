@@ -1,0 +1,12 @@
+.link {
+  margin: auto;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+.link:before {
+  background-color: white;
+}
+.link:hover {
+  color: #63501b;
+}

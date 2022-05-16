@@ -1,0 +1,7 @@
+.products {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}

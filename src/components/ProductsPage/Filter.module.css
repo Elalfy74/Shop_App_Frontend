@@ -1,0 +1,35 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+}
+.filter_product {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.color_size select:last-child {
+  margin-left: 1.2rem;
+}
+.filter_product select {
+  padding: 10px 20px;
+}
+@media (max-width: 991px) {
+  .filter_product h2 {
+    font-size: 1.2rem;
+  }
+  .filter_product select {
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .color_size select {
+    margin-left: 0.8rem;
+  }
+  .filter_product {
+    justify-content: space-between;
+  }
+}

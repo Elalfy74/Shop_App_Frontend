@@ -1,0 +1,149 @@
+.product_view {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+.product_view img {
+  width: 600px;
+  max-width: 100%;
+  margin-right: 4rem;
+}
+@media (max-width: 1200px) {
+  .product_view img {
+    margin-right: 2rem;
+    width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .product_view {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product_view img {
+    margin-right: 0;
+  }
+}
+.description {
+  margin-top: 6rem;
+  flex: 1;
+}
+@media (max-width: 992px) {
+  .description {
+    margin-top: 0.4rem;
+    flex: 0;
+    text-align: center;
+  }
+}
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.description p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  color: #777;
+}
+.description h4 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+@media (max-width: 1200px) {
+  .description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .description p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+.filter {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.colors {
+  display: flex;
+  align-items: center;
+}
+.colors span:first-child,
+.size span:first-child {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+.colors span:not(:first-child) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.size {
+  display: flex;
+  align-items: center;
+}
+.size select {
+  padding: 5px 10px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.quantity p {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 0;
+  width: 100px;
+}
+.counter {
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.counter:hover {
+  background-color: rgb(224, 221, 221);
+}
+.quantity button {
+  border: none;
+  background-color: white;
+  color: var(--second-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 3px solid var(--second-color);
+  transition: var(--main-transition);
+}
+@media (max-width: 1200px) {
+  .quantity button {
+    padding: 5px 8px;
+    font-size: 1rem;
+  }
+}
+.quantity button:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+@media (max-width: 767px) {
+  .filter {
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .quantity {
+    justify-content: space-evenly;
+  }
+}
