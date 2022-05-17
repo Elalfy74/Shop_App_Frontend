@@ -6,13 +6,13 @@ import LoadingSpinner from "../../UI/LoadingSpinner/LoadingSpinner";
 import classes from "./ProductsList.module.css";
 
 const sortProducts = (products, sort) => {
+  if (products.length === 0) return;
   return products.sort((productA, productB) => {
     if (sort === "asc") {
       return productA.price - productB.price;
     } else if (sort === "dsc") {
       return productB.price - productA.price;
     } else {
-      console.log(productA);
       return productA._id - productB._id;
     }
   });
@@ -26,10 +26,6 @@ const ProductsList = ({ productItems, status, filters }) => {
   const sort = queryParams.get("sort");
 
   const { size, color } = filters;
-
-  useEffect(() => {
-    setFilteredproducts(productItems);
-  }, [productItems]);
 
   useEffect(() => {
     if (size && color) {
@@ -47,10 +43,12 @@ const ProductsList = ({ productItems, status, filters }) => {
       setFilteredproducts(
         productItems.filter((product) => product.color.includes(color))
       );
+    } else {
+      setFilteredproducts(productItems);
     }
-  }, [productItems, size, color]);
+  }, [productItems, size, color, sort]);
 
-  const sortedProducts = sortProducts(filteredProducts, sort);
+  sortProducts(filteredProducts, sort);
 
   if (status === "error") {
     return <div>Something went wrong</div>;
@@ -62,7 +60,7 @@ const ProductsList = ({ productItems, status, filters }) => {
         <LoadingSpinner />
       ) : (
         <div className={classes.products}>
-          {sortedProducts.map((product) => (
+          {filteredProducts.map((product) => (
             <Product product={product} key={product._id} />
           ))}
         </div>

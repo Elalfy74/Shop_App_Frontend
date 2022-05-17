@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
 import { authActions } from "../../redux/auth_reducer";
