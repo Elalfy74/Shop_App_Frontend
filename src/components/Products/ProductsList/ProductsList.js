@@ -12,7 +12,8 @@ const sortProducts = (products, sort) => {
     } else if (sort === "dsc") {
       return productB.price - productA.price;
     } else {
-      return productA.createAt - productB.createAt;
+      console.log(productA);
+      return productA._id - productB._id;
     }
   });
 };
