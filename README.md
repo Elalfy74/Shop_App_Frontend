@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Shop App FrontEnd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Preview](https://ecommerce-shopapp.herokuapp.com/)
+
+## Languages & tools
+
+- Reactjs
+- Redux toolkit
+- CSS
 
 ## Available Scripts
 
